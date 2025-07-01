@@ -1,14 +1,17 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import SlideContainer from '../components/SlideContainer';
+import IntroComicSlide from '../components/slides/IntroComicSlide';
+import FlipRuleSlide from '../components/slides/FlipRuleSlide';
 
 const Index = () => {
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
-  );
+  const slides = [
+    IntroComicSlide,
+    FlipRuleSlide,
+    // More slides will be added here
+  ];
+
+  return <SlideContainer slides={slides} />;
 };
 
 export default Index;
