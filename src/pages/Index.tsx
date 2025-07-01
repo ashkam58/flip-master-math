@@ -7,7 +7,7 @@ import BalanceGameSlide from '../components/slides/BalanceGameSlide';
 import ChallengeSlide from '../components/slides/ChallengeSlide';
 import MasterySlide from '../components/slides/MasterySlide';
 import CelebrationSlide from '../components/slides/CelebrationSlide';
-import HireMe from '../components/slides/HireMe'; // <-- Add this import
+import HireMe from '../components/slides/HireMe'; // <-- Fixed import
 
 const Index = () => {
   const slides = [
@@ -21,7 +21,11 @@ const Index = () => {
     HireMe, // <-- Add HireMe as the last slide
   ];
 
-  return <SlideContainer slides={slides} />;
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 flex flex-col">
+      <SlideContainer slides={slides} />
+    </div>
+  );
 };
 
 export default Index;
