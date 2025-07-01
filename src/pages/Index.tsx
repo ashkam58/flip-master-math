@@ -1,4 +1,3 @@
-
 import React from 'react';
 import SlideContainer from '../components/SlideContainer';
 import IntroComicSlide from '../components/slides/IntroComicSlide';
@@ -8,6 +7,7 @@ import BalanceGameSlide from '../components/slides/BalanceGameSlide';
 import ChallengeSlide from '../components/slides/ChallengeSlide';
 import MasterySlide from '../components/slides/MasterySlide';
 import CelebrationSlide from '../components/slides/CelebrationSlide';
+import HireMe from '../components/slides/HireMe'; // <-- Add this import
 
 const Index = () => {
   const slides = [
@@ -18,6 +18,7 @@ const Index = () => {
     ChallengeSlide,
     MasterySlide,
     CelebrationSlide,
+    HireMe, // <-- Add HireMe as the last slide
   ];
 
   return <SlideContainer slides={slides} />;
